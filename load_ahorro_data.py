@@ -1,6 +1,8 @@
 
 import json
 
+from file_settings import accounting_dir
+
 
 def load_data(data_path):
     with open(data_path, 'r', encoding='utf8') as data_input:
@@ -9,7 +11,8 @@ def load_data(data_path):
 
 
 def main():
-    data_path = 'data/Ahorro_Backup_20190522144210.json'
+    file_name = 'Ahorro_Backup_20190522144210.json'
+    data_path = accounting_dir / file_name
     data = load_data(data_path)
     print(data)
 
