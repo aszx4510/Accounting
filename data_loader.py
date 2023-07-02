@@ -1,6 +1,6 @@
 import pathlib
 
-import pandas
+import pandas as pd
 
 from file_settings import accounting_dir
 
@@ -11,7 +11,7 @@ def concat_filepath(filename: str, default_dir: pathlib = accounting_dir):
 
 def load_money_manager_data(file_name: str):
     filepath = concat_filepath(file_name, default_dir=accounting_dir)
-    df_data = pandas.read_csv(filepath)
+    df_data = pd.read_csv(filepath)
     print(df_data.shape)
 
     return df_data
