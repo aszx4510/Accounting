@@ -1,4 +1,4 @@
-# Ahorro Migration Roadmap
+﻿# Ahorro Migration Roadmap
 
 ## Goal
 
@@ -9,6 +9,7 @@
 
 - JSON 清單: `docs/ahorro-json-inventory.md`
 - 分類 mapping 討論: `docs/ahorro-category-mapping.md`
+- 未定案類別樣本: `docs/ahorro-unresolved-category-samples.md`
 
 ## Agreed Process
 
@@ -24,9 +25,11 @@
 | Date | Topic | Decision | Action |
 |---|---|---|---|
 | 2026-03-08 | 流程重排 | 先做 JSON 盤點與 mapping 設計，再做轉換 | 已建立三份 markdown |
+| 2026-03-08 | type107-type201 初次命名 | 先確認證據明確的分類，證據不足者標成 blocked 待你再決定 | 已更新 mapping 討論表 |
+| 2026-03-08 | type108-type204 補充確認 | 依你提供的記帳語境，確認 `type108`、`type111`、`type112`、`type115`、`type117`、`type119`、`type200`、`type204` | 已更新 mapping 討論表與樣本文件 |
 
 ## Next Session Checklist
 
-- 從 `type107` 開始，逐項確認到 `type204`。
-- 每確認一列就更新 `status` 與 `discussion_notes`。
+- 處理尚未命名的 `type113`、`type116`、`type118`、`type202`、`type203`。
+- 討論既有自訂類別 `宵夜`、`書`、`門票` 是否保留原名或重新映射。
 - 全部 `confirmed` 後再進入 CSV 最終輸出。
